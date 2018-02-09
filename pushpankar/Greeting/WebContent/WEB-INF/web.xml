@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Greeting</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Greeting</display-name>
+    <servlet-name>Greeting</servlet-name>
+    <servlet-class>Greeting</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Greeting</servlet-name>
+    <url-pattern>/Greeting</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Arthmatics</display-name>
+    <servlet-name>Arthmatics</servlet-name>
+    <servlet-class>Arthmatics</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Arthmatics</servlet-name>
+    <url-pattern>/Arthmatics</url-pattern>
+  </servlet-mapping>
+</web-app>

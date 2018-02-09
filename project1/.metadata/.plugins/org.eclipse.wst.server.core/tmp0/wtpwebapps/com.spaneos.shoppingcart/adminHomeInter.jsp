@@ -1,0 +1,9 @@
+<%
+	String uid = request.getParameter("uid");
+	String ps = request.getParameter("psw");
+%>
+<jsp:useBean id="log" class="com.spaneos.online_shopping.LoginBean" scope="request">
+	<jsp:setProperty property="uid" name="log" value="<%=uid%>" />
+	<jsp:setProperty property="pass" name="log" value="<%=ps%>" />
+</jsp:useBean>
+<jsp:forward page="login.Ado" />

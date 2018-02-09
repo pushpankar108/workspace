@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";@CHARSET "UTF-8";
+html {
+	margin: 0;
+	padding: 0;
+	
+}
+body {
+	width: 940px;
+	margin: 0 auto;
+	font: 10pt/1.5em Helvetica,"Helvetica neue", Arial, sans-serif;
+}
+
+h1{
+	text-align: center;
+}
+p{
+	margin-top:20px;
+    margin-bottom:20px;
+    margin-right:20px;
+    margin-left: 20px;
+}
+th{
+	background: green;
+	color: white;
+}
+	.pad{
+padding: 3px;
+background: black;
+color: white;
+}
+.pad2{
+padding: 1px;
+background: green;}	
+
+

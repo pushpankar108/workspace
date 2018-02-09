@@ -1,0 +1,3 @@
+INDEX VERSION 1.3+/home/spaneos/workspace/project/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3714901765.index
+1072485625.index

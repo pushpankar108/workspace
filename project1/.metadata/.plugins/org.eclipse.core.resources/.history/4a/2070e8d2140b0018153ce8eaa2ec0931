@@ -1,0 +1,138 @@
+
+  11 @import url(http://fonts.googleapis.com/css?family=Roboto);
+  12 
+  13 * {
+  14     font-family: 'Roboto', sans-serif;
+  15 }
+  16 
+  17 #login-modal .modal-dialog {
+  18     width: 350px;
+  19 }
+  20 
+  21 #login-modal input[type=text], input[type=password] {
+  22         margin-top: 10px;
+  23 }
+  24 
+  25 #div-login-msg,
+  26 #div-lost-msg,
+  27 #div-register-msg {
+  28     border: 0px solid #dadfe1;
+  29     height: 30px;
+  30     line-height: 28px;
+  31     transition: all ease-in-out 500ms;
+  32 }
+  33 
+  34 #div-login-msg.success,
+  35 #div-lost-msg.success,
+  36 #div-register-msg.success {
+  37     border: 1px solid #68c3a3;
+  38     background-color: #c8f7c5;
+  39 }
+  40 
+  41 #div-login-msg.error,
+  42 #div-lost-msg.error,
+  43 #div-register-msg.error {
+  44     border: 1px solid #eb575b;
+  45     background-color: #ffcad1;
+  46 }
+  47 
+  48 #icon-login-msg,
+  49 #icon-lost-msg,
+  50 #icon-register-msg {
+  51     width: 100px;
+  52     text-align:center;
+  53     line-height: 28px;
+  54     text-align: center;
+  55     
+  56     margin-right: 20px;
+  57     transition: all ease-in-out 500ms;
+  58 }
+  59 
+  60 #icon-login-msg.success,
+  61 #icon-lost-msg.success,
+  62 #icon-register-msg.success {
+  63     background-color: #68c3a3 !important;
+  64 }
+  65 
+  66 #icon-login-msg.error,
+  67 #icon-lost-msg.error,
+  68 #icon-register-msg.error {
+  69     background-color: #eb575b !important;
+  70 }
+  71 
+  72 #img_logo {
+  73     max-height: 100px;
+  74     max-width: 100px;
+  75 }
+  76 
+  77 /* #########################################
+  78    #    override the bootstrap configs     #
+  79    ######################################### */
+  80 
+  81 .modal-backdrop.in {
+  82     filter: alpha(opacity=50);
+  83     opacity: .8;
+  84 }
+  85 
+  86 .modal-content {
+  87     background-color: #ececec;
+  88     border: 1px solid #bdc3c7;
+  89     border-radius: 0px;
+  90     outline: 0;
+  91 }
+  92 
+  93 .modal-header {
+  94     min-height: 16.43px;
+  95     padding: 15px 15px 15px 15px;
+  96     border-bottom: 0px;
+  97 }
+  98 
+  99 .modal-body {
+ 100     position: relative;
+ 101     padding: 5px 15px 5px 15px;
+ 102 }
+ 103 
+ 104 .modal-footer {
+ 105     padding: 15px 15px 15px 15px;
+ 106     text-align: left;
+ 107     border-top: 0px;
+ 108 }
+ 109 
+ 110 .checkbox {
+ 111     margin-bottom: 0px;
+ 112 }
+ 113 
+ 114 .btn {
+ 115     border-radius: 0px;
+ 116 }
+ 117 
+ 118 .btn:focus,
+ 119 .btn:active:focus,
+ 120 .btn.active:focus,
+ 121 .btn.focus,
+ 122 .btn:active.focus,
+ 123 .btn.active.focus {
+ 124     outline: none;
+ 125 }
+ 126 
+ 127 .btn-lg, .btn-group-lg>.btn {
+ 128     border-radius: 0px;
+ 129 }
+ 130 
+ 131 .btn-link {
+ 132     padding: 5px 10px 0px 0px;
+ 133     color: #95a5a6;
+ 134 }
+ 135 
+ 136 .btn-link:hover, .btn-link:focus {
+ 137     color: #2c3e50;
+ 138     text-decoration: none;
+ 139 }
+ 140 
+ 141 .glyphicon {
+ 142     top: 0px;
+ 143 }
+ 144 
+ 145 .form-control {
+ 146   border-radius: 0px;
+ 147 

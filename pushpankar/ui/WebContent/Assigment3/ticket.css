@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+ h1{
+             background-color:#ff8533;
+     }
+ body{
+              align:center;
+               margin-left:300px;
+               margin-right:350px;
+       }
+ .button{
+               align:center;
+                background-color:#ffaa33;
+        }

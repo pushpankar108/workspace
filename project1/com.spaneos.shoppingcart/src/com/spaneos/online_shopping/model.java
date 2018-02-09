@@ -1,0 +1,82 @@
+package com.spaneos.online_shopping;
+
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+ 
+public class model {
+     PreparedStatement ps_sql = null;
+     static PreparedStatement ps_ins = null;
+     ResultSet rs = null;
+     CategoryBean cb = null;
+     productBean pb = null;
+
+        
+    
+     //method to add a category in category table------------------------
+     public static boolean addCategory(CategoryBean cbean)throws SQLException, InstantiationException, IllegalAccessException {
+          Connection con1 = (Connection) JDBCHelper.getConnection(); 
+          System.out.println(cbean.getCat());
+          ps_ins = con1.prepareStatement("insert into catogeries(cname,description) values(?,?)");
+          ps_ins.setString(1, cbean.getCat());
+          ps_ins.setString(2, cbean.getDes());
+ 
+          ps_ins.execute();
+          System.out.println("success");
+          return true;
+         }
+       //method to add a product in product table-------------------------------
+     public static boolean addProduct(productBean pbean)
+           throws SQLException, InstantiationException, IllegalAccessException {
+                Connection con1 = (Connection) JDBCHelper.getConnection();
+                System.out.println("inside add product in model");
+                System.out.println("product bean "+pbean);
+                 ps_ins = con1.prepareStatement("insert into products (pname,pcat,pdes,pno,price) values(?,?,?,?,?)");
+                 ps_ins.setString(1, pbean.getPname());
+                 ps_ins.setString(2, pbean.getPcat());
+                 ps_ins.setString(3, pbean.getPdes());
+                 ps_ins.setInt(4, pbean.getPno());
+                 ps_ins.setInt(5, pbean.getPrice());
+                 System.out.println("adding in progress");
+                 ps_ins.execute();
+                 System.out.println("success");
+                 return true;
+         }
+     //method to delete specific category and products in same category------------------------------------------------------
+     public static boolean deleteCategory(String s1)
+           throws InstantiationException, IllegalAccessException, SQLException {
+                 Connection con1 = (Connection) JDBCHelper.getConnection();
+
+                 System.out.println("delete category product");
+                 ps_ins = con1.prepareStatement("delete from catogeries where cname=? ");
+                 ps_ins.setString(1, s1);
+                 System.out.println(s1);
+                 ps_ins.execute();
+                 ps_ins = con1.prepareStatement("delete from products where pcat=? ");
+                 ps_ins.setString(1, s1);
+                 System.out.println("cat delete .."+s1);
+                 ps_ins.execute();
+                 System.out.println("success");
+ 
+                 return true;
+ 
+         }
+ 
+     //method to delete specific product ----------------------------------------------------------------------------------------
+     public static boolean deleteProduct(String s1) throws SQLException, InstantiationException, IllegalAccessException {
+                 Connection con1 = (Connection) JDBCHelper.getConnection();
+ 
+                 System.out.println("hellodelete");
+                 ps_ins = con1.prepareStatement("delete from products where pname=? ");
+                 ps_ins.setString(1, s1);
+                 System.out.println(s1);
+ 
+                 ps_ins.execute();
+                 System.out.println("success");
+
+                 return true;
+         }
+ 
+ }

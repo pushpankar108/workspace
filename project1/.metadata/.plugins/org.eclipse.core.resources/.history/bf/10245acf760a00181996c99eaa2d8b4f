@@ -1,0 +1,5 @@
+package com.spaneos.onlineshopping.user;
+
+public class UserServlet {
+
+}

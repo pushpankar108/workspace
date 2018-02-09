@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html><head>
+<title>slide</title>
+
+<style>
+.mySlides {display:none;}
+fieldset{
+		margin-left: 200px;
+		width: 600px;
+        height: 700px;
+        overflow:auto;
+}
+h2{
+text-align: center;}
+</style>
+</head>
+<body>
+<fieldset>
+<h2>image sliding</h2>
+
+<div  class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="123.jpg" style="width:100">
+  <img class="mySlides" src="234.jpg" style="width:100">
+  <img class="mySlides" src="345.jpg" style="width:100">
+  <img class="mySlides" src="456.jpg" style="width:100">
+  <img class="mySlides" src="567.jpg" style="width:100">  
+</div>
+</fieldset>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 1000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>

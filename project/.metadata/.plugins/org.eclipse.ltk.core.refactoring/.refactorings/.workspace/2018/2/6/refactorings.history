@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Copy (2) of com.spaneos.online_shoping-cart&apos; to &apos; com.spaneos.online_shoping-cart&apos;" description="Rename resource &apos;Copy (2) of com.spaneos.online_shoping-cart&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Copy (2) of com.spaneos.online_shoping-cart" name=" com.spaneos.online_shoping-cart" stamp="1517821047428" updateReferences="true"/>
+</session>

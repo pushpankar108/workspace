@@ -1,0 +1,18 @@
+<%  
+    String pname=request.getParameter("pname");  
+    String pdes=request.getParameter("pdes");
+    String pcat=request.getParameter("cat");
+    String ppno=request.getParameter("pno");
+    String pprice=request.getParameter("price");
+    int pno=Integer.parseInt(ppno);
+    int price=Integer.parseInt(pprice);
+    %>
+   
+   <jsp:useBean id="logcat" class="com.spaneos.online_shopping.productBean" scope="request">  
+   <jsp:setProperty property="pname" name="logcat" value="<%=pname %>"/>
+   <jsp:setProperty property="pdes" name="logcat" value="<%=pdes %>"/> 
+   <jsp:setProperty property="pcat" name="logcat" value="<%=pcat %>"/> 
+   <jsp:setProperty property="pno" name="logcat" value="<%=pno %>"/> 
+   <jsp:setProperty property="price" name="logcat" value="<%=price %>"/> 
+    </jsp:useBean>
+    <jsp:forward page="addProduct1.Ado"/> 

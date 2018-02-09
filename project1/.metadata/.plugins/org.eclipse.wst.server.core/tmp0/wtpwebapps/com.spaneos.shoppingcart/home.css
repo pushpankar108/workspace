@@ -1,0 +1,14 @@
+/**@CHARSET "ISO-8859-1";*/
+@CHARSET "UTF-8";
+
+body, html {
+	height:100%;
+	margin: 0;
+	/* Center and scale the image nicely */
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.span {
+	color: red;
+}
